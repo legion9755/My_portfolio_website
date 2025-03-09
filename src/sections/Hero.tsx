@@ -82,6 +82,7 @@ export const HeroSection = () => {
           </button>
           <button className="inline-flex items-center gap-2 border border-white bg-white text-gray-900 h-12 px-6 rounded-xl">
             <span>👋</span>
+            {/* eslint-disable-next-line react/no-unescaped-entities */}
             <span className="font-semibold">Let's Connect</span>
           </button>
         </div>
