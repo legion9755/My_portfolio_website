@@ -19,7 +19,7 @@ const portfolioProjects = [
     image: ycDirectoryImage,
   },
   {
-    company: "IIT (ISM) Dhanbad",
+    company: "Self",
     year: "2024",
     title: "YelpCamp",
     results: [
