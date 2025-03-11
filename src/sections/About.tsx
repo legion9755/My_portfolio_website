@@ -92,7 +92,7 @@ const hobbies = [
 ];
 
 interface aboutSectionProps {
-  id?: string; // Optional id prop
+  id?: string; 
 }
 
 export const AboutSection: React.FC<aboutSectionProps> = ({ id }) => {

@@ -3,7 +3,7 @@ import ArrowUpRightIcon from '@/assets/icons/arrow-up-right.svg';
 import grainImage from '@/assets/images/grain.jpg';
 
 interface ContactSectionProps {
-  id?: Contact
+  id?: string;
 }
 
 export const ContactSection: React.FC<ContactSectionProps> = ({ id }) => {
