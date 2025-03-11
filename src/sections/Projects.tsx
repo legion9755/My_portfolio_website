@@ -78,7 +78,7 @@ export const ProjectsSection: React.FC<ProjectsSectionProps> = ({ id })=> {
                   <ul className="flex flex-col gap-4 mt-4 md:mt-5">
                     {project.results.map((result) => (
                       <li
-                        // key={project.title}
+                        key={project.title}
                         className="flex gap-2 text-sm md:text-base text-white/50"
                       >
                         <CheckCircleIcon className="size-5 md:size-6" />
