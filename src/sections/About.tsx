@@ -91,10 +91,14 @@ const hobbies = [
   },
 ];
 
-export const AboutSection = () => {
+interface aboutSectionProps {
+  id?: string; // Optional id prop
+}
+
+export const AboutSection: React.FC<aboutSectionProps> = ({ id }) => {
   const constraintRef = useRef(null);
   return (
-    <div className="py-20 lg:py-28">
+    <div id={id} className="py-20 lg:py-28">
       <div className="container">
         <SectionHeader
           eyebrow="About Me"
