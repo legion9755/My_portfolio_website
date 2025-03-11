@@ -149,8 +149,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ id }) => {
           </h1>
           <p className="mt-4 text-center text-white/60 md:text-lg">
           {/* eslint-disable-next-line react/no-unescaped-entities */}
-            Hi, I'm Vaibhav! 👋 
-            I'm an M.Tech student at IIT Dhanbad, passionate
+            Hi, I'm Vaibhav! 👋 I'm an M.Tech student at IIT Dhanbad, passionate
             about problem-solving and building scalable applications. I
             specialize in full-stack web development. From
             crafting efficient algorithms to creating dynamic web apps, I love
