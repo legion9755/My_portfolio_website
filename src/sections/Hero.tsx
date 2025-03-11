@@ -141,10 +141,7 @@ export const HeroSection = () => {
             Building Exceptional User Experiences
           </h1>
           <p className="mt-4 text-center text-white/60 md:text-lg">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste
-            exercitationem harum asperiores obcaecati quis! Repudiandae qui
-            inventore et architecto, eum pariatur libero voluptatem mollitia
-            dicta magni expedita, eligendi omnis unde!
+          Passionate developer and problem solver, skilled in building efficient algorithms and full-stack web applications. Always eager to learn, innovate, and create impactful solutions.
           </p>
         </div>
         <div className="flex flex-col md:flex-row justify-center items-center mt-8 gap-4">

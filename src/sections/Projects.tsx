@@ -1,50 +1,37 @@
-import darkSaasLandingPage from "@/assets/images/dark-saas-landing-page.png";
-import lightSaasLandingPage from "@/assets/images/light-saas-landing-page.png";
-import aiStartupLandingPage from "@/assets/images/ai-startup-landing-page.png";
 import Image from "next/image";
 import CheckCircleIcon from "@/assets/icons/check-circle.svg";
 import ArrowUpRightIcon from "@/assets/icons/arrow-up-right.svg";
-import grainImage from "@/assets/images/grain.jpg";
+import ycDirectoryImage from "@/assets/images/yc.png";
+import yelpCampImage from "@/assets/images/yelpcamp.png";
 import Card from "@/components/Card";
 
 const portfolioProjects = [
   {
-    company: "Acme Corp",
-    year: "2022",
-    title: "Dark Saas Landing Page",
+    company: "IIT (ISM) Dhanbad",
+    year: "2025",
+    title: "YC Directory",
     results: [
-      { title: "Enhanced user experience by 40%" },
-      { title: "Improved site speed by 50%" },
-      { title: "Increased mobile traffic by 35%" },
+      { title: "Provided a platform for 100+ entrepreneurs to pitch ideas" },
+      { title: "Enhanced user experience with a minimalistic design" },
+      { title: "Built with the latest Next.js 15 and React 19 technologies" },
     ],
-    link: "https://youtu.be/4k7IdSLxh6w",
-    image: darkSaasLandingPage,
+    link: "https://yc-directory-psi-orcin.vercel.app/",
+    image: ycDirectoryImage,
   },
   {
-    company: "Innovative Co",
-    year: "2021",
-    title: "Light Saas Landing Page",
+    company: "IIT (ISM) Dhanbad",
+    year: "2024",
+    title: "YelpCamp",
     results: [
-      { title: "Boosted sales by 20%" },
-      { title: "Expanded customer reach by 35%" },
-      { title: "Increased brand awareness by 15%" },
+      { title: "Enabled users to discover & review 1000+ campgrounds" },
+      { title: "Integrated interactive maps for seamless navigation" },
+      { title: "Implemented strong security measures & authentication" },
     ],
-    link: "https://youtu.be/7hi5zwO75yc",
-    image: lightSaasLandingPage,
-  },
-  {
-    company: "Quantum Dynamics",
-    year: "2023",
-    title: "AI Startup Landing Page",
-    results: [
-      { title: "Enhanced user experience by 40%" },
-      { title: "Improved site speed by 50%" },
-      { title: "Increased mobile traffic by 35%" },
-    ],
-    link: "https://youtu.be/Z7I5uSRHMHg",
-    image: aiStartupLandingPage,
+    link: "https://yelpcamp-6h69.onrender.com",
+    image: yelpCampImage,
   },
 ];
+
 
 export const ProjectsSection = () => {
   return (
@@ -63,11 +50,13 @@ export const ProjectsSection = () => {
         </p>
 
         <div className="flex flex-col mt-10 md:mt-20 gap-20 ">
-          {portfolioProjects.map((project) => (
+          {portfolioProjects.map((project, projectIndex) => (
             
             <Card
               key={project.title}
-              className="pt-8 px-8 pb-0 md:pt-12 md:px-10 lg:pt-16 lg:px-20 sticky top-0"
+              className="pt-8 px-8 pb-0 md:pt-12 md:px-10 lg:pt-16 lg:px-20 sticky " style={{
+                top: `calc(64px + ${projectIndex * 40}px)`,
+              }}
             >
              
               <div className="lg:grid lg:grid-cols-2 lg:gap-16">
