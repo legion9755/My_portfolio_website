@@ -7,12 +7,15 @@ import HeroOrbit from "@/components/HeroOrbit";
 import SparkleIcon from "@/assets/icons/sparkle.svg";
 
 interface HeroSectionProps {
-  id?: string; 
+  id?: string;
 }
 
 export const HeroSection: React.FC<HeroSectionProps> = ({ id }) => {
   return (
-    <div id={id} className="py-32 md:py-48 lg:py-60 relative z-0 overflow-x-clip">
+    <div
+      id={id}
+      className="py-32 md:py-48 lg:py-60 relative z-0 overflow-x-clip"
+    >
       <div className="absolute inset-0 [mask-image:linear-gradient(to_bottom,transparent,black_10%,black_70%,transparent)]">
         <div
           className="absolute inset-0 -z-30 opacity-5"
@@ -145,7 +148,15 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ id }) => {
             Building Exceptional User Experiences
           </h1>
           <p className="mt-4 text-center text-white/60 md:text-lg">
-          Passionate developer and problem solver, skilled in building efficient algorithms and full-stack web applications. Always eager to learn, innovate, and create impactful solutions.
+          {/* eslint-disable-next-line react/no-unescaped-entities */}
+            Hi, I'm Vaibhav! 👋 
+            I'm an M.Tech student at IIT Dhanbad, passionate
+            about problem-solving and building scalable applications. I
+            specialize in full-stack web development. From
+            crafting efficient algorithms to creating dynamic web apps, I love
+            turning ideas into reality. Always eager to learn, build, and
+              {/* eslint-disable-next-line react/no-unescaped-entities */}
+            collaborate. Let’s connect! 🚀
           </p>
         </div>
         <div className="flex flex-col md:flex-row justify-center items-center mt-8 gap-4">
